@@ -1,12 +1,12 @@
 <?php
 /**
- * @projectName@
+ * Integrator
  * 
- * @package    @packageName@
- * @copyright  @copyWrite@
- * @license    @buildLicense@
- * @version    @fileVers@ ( $Id: api.php 74 2012-10-01 15:55:25Z steven_gohigher $ )
- * @author     @buildAuthor@
+ * @package    Integrator 3.0 - Wordpress Package
+ * @copyright  2009 - 2012 Go Higher Information Services.  All rights reserved.
+ * @license    ${p.PROJECT_LICENSE}
+ * @version    3.0.6 ( $Id: api.php 74 2012-10-01 15:55:25Z steven_gohigher $ )
+ * @author     Go Higher Information Services
  * @since      3.0.0
  * 
  * @desc       This file is a wrapper for the API to handle calls to the Integrator
@@ -24,7 +24,7 @@
 
 /**
  * IntApi class object
- * @version		@fileVers@
+ * @version		3.0.6
  * 
  * @since		3.0.0
  * @author		Steven
@@ -98,7 +98,7 @@ class IntApi
 	/**
 	 * Constructor method
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * 
 	 * @since		3.0.0
 	 */
@@ -142,7 +142,7 @@ class IntApi
 	/**
 	 * Getter method
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		string		- $name: the name of the property trying to be gotten
 	 * 
 	 * @return		mixed value of property or null if not set
@@ -157,7 +157,7 @@ class IntApi
 	/**
 	 * Setter method
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		string		- $name: the name of the property to set
 	 * @param		mixed		- $value: the value to set the property to
 	 * 
@@ -172,7 +172,7 @@ class IntApi
 	/**
 	 * Retrieves all the pages for all the connections
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * 
 	 * @return		result of api call
 	 * @since		3.0.0
@@ -191,7 +191,7 @@ class IntApi
 	/**
 	 * Retrieves the correct route for a selected connection / page combination
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		array		- $post: contains the cnxn_id and page being requested
 	 * 
 	 * @return		string containing URL
@@ -215,7 +215,7 @@ class IntApi
 	/**
 	 * Retrieves connections requiring wrapping
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * 
 	 * @return		result of api call
 	 * @since		3.0.0
@@ -234,7 +234,7 @@ class IntApi
 	/**
 	 * Pings the Integrator to ensure connection
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		boolean		- $updated: if true we should pull values from $_POST
 	 * 
 	 * @return		boolean true if connection successful, string returned error message otherwise
@@ -273,7 +273,7 @@ class IntApi
 	/**
 	 * Updates the settings in the Integrator with the settings established in the component
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		boolean		- $updated: if true we should pull values from $_POST
 	 * 
 	 * @return		result of api call
@@ -313,7 +313,7 @@ class IntApi
 	/**
 	 * Create a new user throughout the Integrator
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		array		- $post: the user array to send
 	 * 
 	 * @return		string containing true or error message
@@ -336,7 +336,7 @@ class IntApi
 	/**
 	 * Calls the Integrator to remove a user
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		string		- $email: the email address of the user being deleted
 	 * 
 	 * @return		string containing true or error message
@@ -360,7 +360,7 @@ class IntApi
 	/**
 	 * Updates user information across the various Integrator connections
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		array		- $post: the user array to send
 	 * 
 	 * @return		string containing true or error message
@@ -383,7 +383,7 @@ class IntApi
 	/**
 	 * Validate user information prior to creation
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		array		- $post: the user array to send
 	 * 
 	 * @return		string containing true or error message
@@ -409,7 +409,7 @@ class IntApi
 	/**
 	 * Validates user information across the various Integrator connections
 	 * @access		public
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		array		- $post: the user array to send
 	 * 
 	 * @return		string containing true or error message
@@ -435,7 +435,7 @@ class IntApi
 	/**
 	 * Wrapper for calling up the API interface
 	 * @access		private
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		string		- $url: the url to connect to
 	 * @param		array		- $post: any additional post variables to send
 	 * @param 		array		- $options: any options to set
@@ -479,7 +479,7 @@ class IntApi
 	/**
 	 * Uniform method to set the api url
 	 * @access		private
-	 * @version		@fileVers@
+	 * @version		3.0.6
 	 * @param		string		- $url: the setting for the api url to use
 	 * 
 	 * @return		string containing corrected url
