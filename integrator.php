@@ -5,8 +5,8 @@
  * @package    @packageName@
  * @copyright  @copyWrite@
  * @license    @buildLicense@
- * @version    @fileVers@ ( $Id: integrator.php 119 2012-11-07 17:13:30Z steven_gohigher $ )
- * @author     @buildAuthor@
+ * @version    3.0.5
+ * @author     steven.gohigher
  * @since      3.0.0
  * 
  * @desc       This is the primary plugin file for the Wordpress extension of the Integrator
