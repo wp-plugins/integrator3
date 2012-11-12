@@ -13,12 +13,12 @@
  *  
  */
 /*
-Plugin Name: @projectName@
+Plugin Name: Integrator 3 for Wordpress
 Plugin URI: https://www.gohigheris.com/
 Description: The Wordpress extension of the Integrator application
-Author: @buildAuthor@
+Author: steven.gohigher
 Author URI: https://www.gohigheris.com/
-Version: @fileVers@
+Version: 3.0.5
 */
 
 define( 'INTEGRATOR_VERSION', "@fileVers@" );
