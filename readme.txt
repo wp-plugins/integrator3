@@ -4,12 +4,11 @@ Donate link: https://www.gohigheris.com
 Tags: whmcs, kayako, fusion, joomla, integration, jwhmcs, gohigher
 Requires at least: 3.2
 Tested up to: 3.4
-Stable tag: 3.0.5
+Stable tag: 3.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Take integration-on-demand to a whole new level with
-Integrator 3 - the only application that brings so much together without sacrificing functionality and usability.
+Take integration-on-demand to a whole new level with Integrator 3 - bringing together so much without sacrificing functionality and usability.
 
 == Description ==
 
