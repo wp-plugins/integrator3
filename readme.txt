@@ -40,15 +40,11 @@ Integrator 3 was designed with the future in mind.  Additional connection types 
 
 To install or upgrade the Wordpress plugin for Integrator 3:
 
-1. Extract the Integrator 3 Connection for Wordpress archive on your local computer into a folder called 'integrator3'.
+1. Upload the 'integrator.php' file and the 'integrator' folder to the '/wp-content/plugins/' directory.
 
-2. With your favorite FTP application, upload the folder called 'wp-content' to your Wordpress root directory. This should move the files into place on the file system, ready to be installed.
+2. Activate the Integrator 3 for Wordpress plugin through the 'Plugins' menu in Wordpress.
 
-3. Log into your Wordpress administration control panel
-
-4. Click on Plugins on the left hand side where you will be taken to the Plugins page showing you the installed and available plugins for your Wordpress site.
-
-5. You will find Integrator in the list of plugins; click on Activate beneath the Integrator 3 plugin name.
+3. 
 
 The Wordpress plugin for Integrator 3 should now be activated and ready to be configured!  For more information on configuration and setup, please visit https://www.gohigheris.com/documentation/integrator-3
 
@@ -69,20 +65,10 @@ By default, your license will include either 2 connections (Lite licenses) or 3 
 The possible connections are amazing:
 
 Lite License
-* Joomla - WHMCS
-* Joomla - Kayako Fusion
-* Wordpress - WHMCS
-* Wordpress - Kayako Fusion
+* Joomla - WHMCS, * Joomla - Kayako Fusion, * Wordpress - WHMCS, * Wordpress - Kayako Fusion
 
 Standard License
-* Joomla - Joomla - WHMCS
-* Joomla - Wordpress - WHMCS
-* Wordpress - Wordpress - WHMCS
-* Joomla - Joomla - Kayako Fusion
-* Joomla - Wordpress - Kayako Fusion
-* Wordpress - Wordpress - Kayako Fusion
-* Joomla - WHMCS - Kayako Fusion (like Go Higher!)
-* Wordpress - WHMCS - Kayakko Fusion
+* Joomla - Joomla - WHMCS, * Joomla - Wordpress - WHMCS, * Wordpress - Wordpress - WHMCS, * Joomla - Joomla - Kayako Fusion, * Joomla - Wordpress - Kayako Fusion, * Wordpress - Wordpress - Kayako Fusion, * Joomla - WHMCS - Kayako Fusion (like Go Higher!), * Wordpress - WHMCS - Kayakko Fusion
 
 == Changelog ==
 
