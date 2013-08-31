@@ -1,6 +1,19 @@
 <?php 
 
-require( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/wp-load.php' );
+// ---- BEGIN INT-3
+//		Wordpress 3.5.x upgrades plugins in a funny location
+$possibles = array(
+		dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/wp-load.php',
+		dirname( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) ) . '/wp-load.php'
+);
+
+foreach ( $possibles as $possible ) {
+	if ( file_exists( $possible ) ) {
+		require ( $possible );
+		break;
+	}
+}
+// ---- END INT-3
 require_once( dirname( __FILE__ ) . '/uri.php' );
 
 $secure_cookie = '';
@@ -32,12 +45,17 @@ $redirect_to	= $uri->toString();
 
 // Perform login magic here
 $int->sendback	= true;
-$user		= wp_signon('', $secure_cookie);
-$success	= is_wp_error( $user ) ? false : true;
+$user		=	wp_signon('', $secure_cookie);
+$success	=	is_wp_error( $user ) ? false : true;
 
-$uri->setPath( rtrim( $uri->getPath(), '/' )  . ( $success ? '/succeed/' . $int->get( 'cookievalue' ) . '/' . $int->get( 'cookiename' ) : '/failed' ) );
+$fields		=	array(
+		'_c'		=>	get_option( 'integrator_cnxnid' ),
+		'session'	=>	IntHelper :: sessionencode( $int->get( 'cookiename' ), $int->get( 'cookievalue' ) )
+		);
+
+$uri->setPath( rtrim( $uri->getPath(), '/' )  . ( $success ? '/succeed' : '/failed' ) );
 $redirect_to = $uri->toString();
 
-wp_safe_redirect($redirect_to);
+IntHelper :: form_redirect( $uri->toString(), $fields );
 
 ?>

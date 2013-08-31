@@ -1,6 +1,20 @@
 <?php
 
-require( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/wp-load.php' );
+// ---- BEGIN INT-3
+//		Wordpress 3.5.x upgrades plugins in a funny location
+$possibles = array(
+		dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/wp-load.php',
+		dirname( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) ) . '/wp-load.php'
+);
+
+foreach ( $possibles as $possible ) {
+	if ( file_exists( $possible ) ) {
+		require ( $possible );
+		break;
+	}
+}
+// ---- END INT-3
+
 require_once( dirname( __FILE__ ) . '/uri.php' );
 
 wp_logout();
