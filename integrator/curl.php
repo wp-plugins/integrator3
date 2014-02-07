@@ -4,9 +4,9 @@
  * Wordpress - Curl Utility File
  * 
  * @package    Integrator 3.0 - Wordpress Package
- * @copyright  2009 - 2012 Go Higher Information Services.  All rights reserved.
+ * @copyright  2009 - 2014 Go Higher Information Services.  All rights reserved.
  * @license    ${p.PROJECT_LICENSE}
- * @version    3.0.19 ( $Id: curl.php 144 2012-11-29 17:19:42Z steven_gohigher $ )
+ * @version    3.0.20 ( $Id: curl.php 144 2012-11-29 17:19:42Z steven_gohigher $ )
  * @author     Go Higher Information Services
  * @since      3.0.0
  * 
@@ -20,7 +20,7 @@
 
 /**
  * IntCurl class object
- * @version		3.0.19
+ * @version		3.0.20
  * 
  * @since		3.0.0
  * @author		Steven
@@ -119,7 +119,7 @@ class IntCurl
 	/**
 	 * Constructor
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $url: if set contains a URL to create the CURL instance with
 	 * 
 	 * @since		3.0.0
@@ -137,7 +137,7 @@ class IntCurl
 	/**
 	 * Call constructor - when a method is called
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param 		string		- $method: the name of the method being called
 	 * @param 		array		- $arguments: the arguments passed to the method
 	 * 
@@ -167,7 +167,7 @@ class IntCurl
 	/**
 	 * Simple call method
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $method: the call method to perform
 	 * @param		string		- $url: the url to call with curl
 	 * @param		array		- $params: any variables / parameters to post/get with
@@ -196,7 +196,7 @@ class IntCurl
 	/**
 	 * Simple FTP get
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $url: the url to call for
 	 * @param		string		- $file_path: the remote file path to get
 	 * @param		string		- $username: the username to use for logging into the FTP server
@@ -245,7 +245,7 @@ class IntCurl
 	/**
 	 * Sets the required items for a post using curl
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		varies		- $params: the parameters to post
 	 * @param		array		- $options: the options to use for curl handler
 	 * 
@@ -272,7 +272,7 @@ class IntCurl
 	/**
 	 * Sets the required items for a put using curl
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		varies		- $params: the parameters to put
 	 * @param		array		- $options: the options to use for curl handler
 	 * 
@@ -298,7 +298,7 @@ class IntCurl
 	/**
 	 * Performs a delete through the curl handler
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		varies		- $params: the parameters to use for execution
 	 * @param		array		- $options: the options for the curl handler
 	 * 
@@ -321,7 +321,7 @@ class IntCurl
 	/**
 	 * Sets the cookeis for the curl handler
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		varies		- $params: the cookie parameters to use
 	 * 
 	 * @return		instance of this object
@@ -341,7 +341,7 @@ class IntCurl
 	/**
 	 * Tests to see if there are errors
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @return		string of error message or false on no error
 	 * @since		3.0.0
@@ -355,7 +355,7 @@ class IntCurl
 	/**
 	 * Sets an http header
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $header: the header type to use
 	 * @param		string		- $content: the content to set the header to
 	 * 
@@ -370,7 +370,7 @@ class IntCurl
 	/**
 	 * Sets the http method
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $method: the setting to use
 	 * 
 	 * @return		instance of this object
@@ -386,7 +386,7 @@ class IntCurl
 	/**
 	 * Create http login option fields
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $username: the username to use
 	 * @param		string		- $password: the password to use
 	 * @param		string		- $type: the authentication type to set
@@ -405,7 +405,7 @@ class IntCurl
 	/**
 	 * Sets proxy options for the curl handler
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $url: the url to use as the proxy server
 	 * @param		integer		- $port: the port on the proxy server to connect through
 	 * 
@@ -423,7 +423,7 @@ class IntCurl
 	/**
 	 * Sets the login for a proxy server for the curl handler
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $username: the username to use
 	 * @param		string		- $password: the password to use
 	 * 
@@ -440,7 +440,7 @@ class IntCurl
 	/**
 	 * Sets the required items for an ssl connection
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		boolean		- $verify_peer: true to verify peer
 	 * @param		integer		- $verify_host: the verify host integer setting for the curl handler
 	 * @param		string		- $path_to_cert: the path to the certificate if set
@@ -466,7 +466,7 @@ class IntCurl
 	/**
 	 * Sets an array of options to the curl handler options
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		array		- $options: array to set
 	 * 
 	 * @return		instance of this object
@@ -492,7 +492,7 @@ class IntCurl
 	/**
 	 * Sets an individual option code and value
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $code: the curl option to set
 	 * @param		varies		- $value: the value to set the code to
 	 * 
@@ -513,7 +513,7 @@ class IntCurl
 	/**
 	 * Creates a new curl handler session and resets common items
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * @param		string		- $url: the url to use for the curl handler
 	 * 
 	 * @return		instance of this object
@@ -546,7 +546,7 @@ class IntCurl
 	/**
 	 * Executes the actual curl request
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @return		response or false on error
 	 * @since		3.0.0
@@ -619,7 +619,7 @@ class IntCurl
 	/**
 	 * Checks to see if curl is actually enabled
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @return		boolean true if curl is enabled
 	 * @since		3.0.0
@@ -633,7 +633,7 @@ class IntCurl
 	/**
 	 * Outputs the debugging screen
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @return		string containing debug information
 	 * @since		3.0.0
@@ -674,7 +674,7 @@ class IntCurl
 	/**
 	 * Assembles an array of request options for debugging
 	 * @access		public
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @return		array
 	 * @since		3.0.0
@@ -688,7 +688,7 @@ class IntCurl
 	/**
 	 * Sets the default values when new sessions are created
 	 * @access		private
-	 * @version		3.0.19
+	 * @version		3.0.20
 	 * 
 	 * @since		3.0.0
 	 */
