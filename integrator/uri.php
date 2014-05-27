@@ -6,7 +6,7 @@
  * @package    Integrator
  * @copyright  2009 - 2014 Go Higher Information Services.  All rights reserved.
  * @license    ${p.PROJECT_LICENSE}
- * @version    3.0.20 ( $Id: uri.php 3 2012-04-19 14:16:13Z steven_gohigher $ )
+ * @version    3.0.21 ( $Id: uri.php 3 2012-04-19 14:16:13Z steven_gohigher $ )
  * @author     Go Higher Information Services
  * @since      3.0.0
  * 
@@ -20,7 +20,7 @@
 
 /**
  * URI class for managing Uniform Resource Identifiers
- * @version		3.0.20
+ * @version		3.0.21
  * 
  * @since		3.0.0
  * @author		Steven
@@ -111,7 +111,7 @@ class IntUri
 	/**
 	 * Constructor method
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $uri: contains the URI to generate object from
 	 * 
 	 * @since		3.0.0
@@ -127,7 +127,7 @@ class IntUri
 	/**
 	 * Gets an object for the given URI, creating it if it doesn't exist
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $uri: contains the URI to retrieve
 	 * @param		boolean		- $force: if set will force a new object to be created
 	 * 
@@ -179,7 +179,7 @@ class IntUri
 	/**
 	 * Gets the base portion of the URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		boolean		- $pathonly: if set will only return the base of the URI
 	 * 
 	 * @return		string containing the base portion of the URI
@@ -209,7 +209,7 @@ class IntUri
 	/**
 	 * Gets the root of the URI object only
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		boolean		- $pathonly: if set will send back only the path
 	 * @param		string		- $path: if set will return the root with the provided path instead
 	 * 
@@ -238,7 +238,7 @@ class IntUri
 	/**
 	 * Gets the current URI of the server regardless of the current object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string of the current URI
 	 * @since		3.0.0
@@ -258,7 +258,7 @@ class IntUri
 	/**
 	 * Takes a URI string and assigns it to the various parts of the object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $uri: containing the URI to parse
 	 * 
 	 * @return		boolean true on success, false on failure
@@ -294,7 +294,7 @@ class IntUri
 	/**
 	 * Converts the object to a string
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		array		- $parts: if set contains an array of URI parts to assemble and return
 	 * 
 	 * @return		string containing the requested parts of the URI
@@ -322,7 +322,7 @@ class IntUri
 	/**
 	 * Sets a variable to the query array
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $name: contains the name of the variable to set
 	 * @param		varies		- $value: contains the value of the variable to set
 	 * 
@@ -341,7 +341,7 @@ class IntUri
 	/**
 	 * Gets a variable from the query array
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $name: contains the variable to get the value of
 	 * @param		varies		- $default: contains the default value to return if no variable found
 	 * 
@@ -360,7 +360,7 @@ class IntUri
 	/**
 	 * Deletes a variable from the query array
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $name: contains the variable to delete
 	 * 
 	 * @since		3.0.0
@@ -377,7 +377,7 @@ class IntUri
 	/**
 	 * Sets the query to the query array
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $query: contains the query of the URI to parse into the variable array
 	 * 
 	 * @since		3.0.0
@@ -403,7 +403,7 @@ class IntUri
 	/**
 	 * Gets the query from the query string
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		boolean		- $toArray: if set will return an array rather than string
 	 * 
 	 * @return		Returns the query string either as a string or as an array
@@ -428,7 +428,7 @@ class IntUri
 	/**
 	 * Builds a query from an array
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		array		- $params: array containing query variables
 	 * @param		string		- $akey: If set sets an array string key[akey]
 	 * 
@@ -467,7 +467,7 @@ class IntUri
 	/**
 	 * Gets the scheme of the current URI
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing scheme
 	 * @since		3.0.0
@@ -481,7 +481,7 @@ class IntUri
 	/**
 	 * Sets the scheme of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $scheme: contains the scheme to set
 	 * 
 	 * @since		3.0.0
@@ -495,7 +495,7 @@ class IntUri
 	/**
 	 * Gets the username of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the username
 	 * @since		3.0.0
@@ -509,7 +509,7 @@ class IntUri
 	/**
 	 * Sets the username of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $user: containing the username to set
 	 * 
 	 * @since  3.0.0
@@ -523,7 +523,7 @@ class IntUri
 	/**
 	 * Gets the password of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the password
 	 * @since		3.0.0
@@ -537,7 +537,7 @@ class IntUri
 	/**
 	 * Sets the password of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $pass: contains the password to set
 	 * 
 	 * @since		3.0.0
@@ -551,7 +551,7 @@ class IntUri
 	/**
 	 * Gets the hostname of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the hostname
 	 * @since		3.0.0
@@ -565,7 +565,7 @@ class IntUri
 	/**
 	 * Sets the hostname of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $host: Containing the hostname to set
 	 * 
 	 * @since		3.0.0
@@ -579,7 +579,7 @@ class IntUri
 	/**
 	 * Gets the port number of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the port number or null if not set
 	 * @since		3.0.0
@@ -593,7 +593,7 @@ class IntUri
 	/**
 	 * Sets the port number of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $port: Contains the port number to set
 	 * 
 	 * @since		3.0.0
@@ -607,7 +607,7 @@ class IntUri
 	/**
 	 * Gets the path of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the path
 	 * @since		3.0.0
@@ -621,7 +621,7 @@ class IntUri
 	/**
 	 * Sets the path of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $path: contains the path to set
 	 * 
 	 * @since		3.0.0
@@ -635,7 +635,7 @@ class IntUri
 	/**
 	 * Gets the fragment of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		string containing the fragment
 	 * @since		3.0.0
@@ -649,7 +649,7 @@ class IntUri
 	/**
 	 * Sets the fragment of the current URI object
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $anchor: Containing the fragment value to set
 	 * 
 	 * @since		3.0.0
@@ -663,7 +663,7 @@ class IntUri
 	/**
 	 * Checks to see if the URI object is a fragment
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		boolean
 	 * @since		3.0.0
@@ -684,7 +684,7 @@ class IntUri
 	/**
 	 * Checks to see if the URI object is set to SSL
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * 
 	 * @return		boolean
 	 * @since		3.0.0
@@ -698,7 +698,7 @@ class IntUri
 	/**
 	 * Checks to see if the URI is actually an internal url
 	 * @access		public
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $url: contains the URL to check
 	 * 
 	 * @return		boolean
@@ -719,7 +719,7 @@ class IntUri
 	/**
 	 * Cleans the path of any undesirable values
 	 * @access		private
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		- $path: contains the path to clean
 	 * 
 	 * @return		string containing cleaned path
@@ -756,7 +756,7 @@ class IntUri
 	/**
 	 * Parses the uri provided
 	 * @access		private
-	 * @version		3.0.20
+	 * @version		3.0.21
 	 * @param		string		$uri: Contains the URI to parse
 	 * 
 	 * @return		array of URI parts
