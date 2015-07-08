@@ -5,7 +5,7 @@
  * @package    Integrator 3
  * @copyright  2009-2013 Go Higher Information Services, LLC.  All rights reserved.
  * @license    GNU General Public License version 2, or later
- * @version    3.1.02 ( $Id: helper.php 244 2013-04-24 13:31:54Z steven_gohigher $ )
+ * @version    3.1.03 ( $Id: helper.php 244 2013-04-24 13:31:54Z steven_gohigher $ )
  * @author     Go Higher Information Services, LLC
  * @since      3.0.0
  * 
@@ -24,7 +24,7 @@
 
 /**
  * IntHelper class object
- * @version		3.1.02
+ * @version		3.1.03
  * 
  * @since		3.0.0
  * @author		Steven
@@ -34,7 +34,7 @@ class IntHelper
 	/**
 	 * Finds a user and returns a single array
 	 * @access		public
-	 * @version		3.1.02
+	 * @version		3.1.03
 	 * @param		string		- $find: either an email or username
 	 * 
 	 * @return		array of data
@@ -66,7 +66,7 @@ class IntHelper
 	/**
 	 * Creates a quick form redirection to send back to the Integrator securely
 	 * @access		public
-	 * @version		3.1.02
+	 * @version		3.1.03
 	 * @param		string		- $url: the form action to send to
 	 * @param		array		- $fields: hidden fields to send
 	 * 
@@ -97,7 +97,7 @@ OUTPUT;
 	/**
 	 * Checks a username to see if it is actually an email address
 	 * @access		public
-	 * @version		3.1.02
+	 * @version		3.1.03
 	 * @param		string		- $username: the suspect username
 	 * 
 	 * @return		boolean true if email
@@ -116,7 +116,7 @@ OUTPUT;
 	 * Method to encode the session data back for Integrator 3
 	 * @access		public
 	 * @static
-	 * @version		3.1.02 ( $id$ )
+	 * @version		3.1.03 ( $id$ )
 	 * @param		string		- $name: the cookie name
 	 * @param		string		- $id: the value assigned
 	 *
@@ -158,7 +158,7 @@ OUTPUT;
 	/**
 	 * Builds a recursive tree from an array of menu items
 	 * @access		public
-	 * @version		3.1.02
+	 * @version		3.1.03
 	 * @param		integer		- $id: the parent to start from
 	 * @param		string		- $indent: any indent value passed on
 	 * @param		array		- $list: can be empty if parent or an array of parent items
@@ -192,7 +192,7 @@ OUTPUT;
 	/**
 	 * Searches for a user and returns all matches
 	 * @access		public
-	 * @version		3.1.02
+	 * @version		3.1.03
 	 * @param		string		- $search
 	 * 
 	 * @return		array or false on failure
