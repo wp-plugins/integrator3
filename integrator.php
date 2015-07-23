@@ -5,7 +5,7 @@
  * @package    Integrator 3
  * @copyright  2009-2013 Go Higher Information Services, LLC.  All rights reserved.
  * @license    GNU General Public License version 2, or later
- * @version    3.1.04 ( $Id: integrator.php 348 2014-11-14 16:32:56Z steven_gohigher $ )
+ * @version    3.1.05 ( $Id: integrator.php 348 2014-11-14 16:32:56Z steven_gohigher $ )
  * @author     Go Higher Information Services, LLC
  * @since      3.0.0
  * 
@@ -18,14 +18,14 @@ Plugin URI: https://www.gohigheris.com/
 Description: The Wordpress extension of the Integrator application
 Author: Go Higher Information Services, LLC
 Author URI: https://www.gohigheris.com/
-Version: 3.1.04
+Version: 3.1.05
 */
 
-define( 'INTEGRATOR_VERSION', "3.1.04" );
+define( 'INTEGRATOR_VERSION', "3.1.05" );
 
 /**
  * Integrator Class
- * @version		3.1.04
+ * @version		3.1.05
  *  
  * @since		3.0.0
  * @author		Steven
@@ -40,7 +40,7 @@ class Integrator
 	/**
 	 * Constructor method
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -106,7 +106,7 @@ class Integrator
 	/**
 	 * Initializes in admin
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -120,7 +120,7 @@ class Integrator
 	/**
 	 * Create the meta box for the Integrated Link admin area
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -156,7 +156,7 @@ class Integrator
 	/**
 	 * Handles the Integrated Link field in admin area and sets it to meta data
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		integer		- $post_id: the post id passed by admin area
 	 * @param		array		- $post: contains description of the post
 	 * 
@@ -200,7 +200,7 @@ class Integrator
 	/**
 	 * Place holder for adding javascript to the admin header
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -213,7 +213,7 @@ class Integrator
 	/**
 	 * Generates the menu item
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -226,7 +226,7 @@ class Integrator
 	/**
 	 * Renders and handles the options page for the Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -279,7 +279,7 @@ class Integrator
 	/**
 	 * Method to grab the cnxn pages from the Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @return		array
 	 * @since		3.0.0
@@ -307,7 +307,7 @@ class Integrator
 	/**
 	 * Method to get a route from the Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @return		result of API call
 	 * @since		3.0.0
@@ -328,7 +328,7 @@ class Integrator
 	/**
 	 * Intercepts calls for the intlink post type and redirects
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -442,7 +442,7 @@ class Integrator
 	/**
 	 * Grabs the logged in cookies when passed through the set_logged_in_cookie action in WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		string		- $cookie: the value of the set cookie
 	 * 
 	 * @since		3.0.0
@@ -457,7 +457,7 @@ class Integrator
 	/**
 	 * Action handler for logging into the site
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		string		- $redirect_to: the redirect url
 	 * @param		bool		- $isset: if the $redirect has been sent back (login started)
 	 * @param 		object		- $user: user object or error
@@ -514,7 +514,7 @@ class Integrator
 	/**
 	 * Action handler for logging out and redirecting to Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0s
 	 */
@@ -578,7 +578,7 @@ class Integrator
 	/**
 	 * Perform actual deletion
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		integer		- $user_id: the user id of the user we just deleted in WP
 	 * 
 	 * @since		3.0.0
@@ -603,7 +603,7 @@ class Integrator
 	/**
 	 * Grab a copy of the user before we delete them
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		integer		- $user_id: contains the user id of the user to delete
 	 * 
 	 * @since		3.0.0
@@ -619,7 +619,7 @@ class Integrator
 	/**
 	 * Update user information on Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param 		integer		- $user_id: id of user
 	 * @param		array		- $post: the original data of user
 	 * 
@@ -647,7 +647,7 @@ class Integrator
 	/**
 	 * Validates user information prior to saving
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		object		- $errors: (reference) WP_Error object
 	 * @param		boolean		- $update: if this is an update then true
 	 * @param		object		- $user: (reference) WP_User object of updated info
@@ -698,7 +698,7 @@ class Integrator
 	/**
 	 * Permits getting of variables
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		string		- $var: the name of the variable to get
 	 * @param		mixed		- $default: the default value if not set
 	 * 
@@ -714,7 +714,7 @@ class Integrator
 	/**
 	 * Permits setting of variables
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		string		- $var: the name of the variable to set
 	 * @param		mixed		- $value: the value to set
 	 * 
@@ -739,7 +739,7 @@ class Integrator
 	/**
 	 * Easy wrapper for pinging Integrator
 	 * @access		private
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		boolean		- $updated: if we are updating settings, set to true to grab from POST
 	 * 
 	 * @return		boolean true or string on error
@@ -754,7 +754,7 @@ class Integrator
 	/**
 	 * Convenient file includer
 	 * @access		private
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @since		3.0.0
 	 */
@@ -801,7 +801,7 @@ class Integrator
 	/**
 	 * Method to check to see if we are active or not
 	 * @access		private
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * 
 	 * @return		boolean
 	 * @since		3.0.7
@@ -826,7 +826,7 @@ class Integrator
 	/**
 	 * Easy wrapper for updating settings on the Integrator
 	 * @access		private
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		boolean		- $updated: if we are updating settings, set to true to grab from POST
 	 * 
 	 * @return		boolean true or string on error
@@ -853,7 +853,7 @@ class Integrator
 
 /**
  * Integrator XMLRPC Handler
- * @version		3.1.04
+ * @version		3.1.05
  * 
  * @since		3.0.0
  * @author		Steven
@@ -864,7 +864,7 @@ class IntXMLRPC
 	/**
 	 * Takes a set of credentials and authenticates them against WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		array
@@ -895,7 +895,7 @@ class IntXMLRPC
 	/**
 	 * Returns this version of the Integrator
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		array
@@ -910,7 +910,7 @@ class IntXMLRPC
 	/**
 	 * Gets the Wordpress menu tree
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array of arguments passed via XML-RPC
 	 * 
 	 * @return		array of menu items
@@ -959,7 +959,7 @@ class IntXMLRPC
 	/**
 	 * Gets missing credentials for user
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array of arguments passed via XML-RPC
 	 * 
 	 * @return		string or false on error
@@ -988,7 +988,7 @@ class IntXMLRPC
 	/**
 	 * Log a user in first
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		true on success array on error
@@ -1026,7 +1026,7 @@ class IntXMLRPC
 	/**
 	 * Ping interface
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		string
@@ -1054,7 +1054,7 @@ class IntXMLRPC
 	/**
 	 * Create a new user in WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		string
@@ -1082,7 +1082,7 @@ class IntXMLRPC
 	/**
 	 * Find a user in WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		string
@@ -1106,7 +1106,7 @@ class IntXMLRPC
 	/**
 	 * Method to remove a user from WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		true or string on error
@@ -1139,7 +1139,7 @@ class IntXMLRPC
 	/**
 	 * Method to search for a user
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		array or false on error
@@ -1161,7 +1161,7 @@ class IntXMLRPC
 	/**
 	 * Updates a user in WP
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		string
@@ -1208,7 +1208,7 @@ class IntXMLRPC
 	/**
 	 * Provides for new user validation
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		true or string on error
@@ -1238,7 +1238,7 @@ class IntXMLRPC
 	/**
 	 * Provides for existing user validation on changes
 	 * @access		public
-	 * @version		3.1.04
+	 * @version		3.1.05
 	 * @param		array		- $args: the arguments passed via XMLRPC Server
 	 * 
 	 * @return		true or string on error
@@ -1366,7 +1366,7 @@ add_action("init", "Int3init");
 /**
  * Integrator initilization
  * @access		public
- * @version		3.1.04
+ * @version		3.1.05
  * 
  * @since		3.0.0
  */
